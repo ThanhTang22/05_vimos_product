@@ -1,0 +1,46 @@
+
+.main-intruction{
+    background-color: $clr-peppermint;
+
+    .main-intruction__title{
+        padding-block: 5rem;
+        h2{
+            text-align: center;
+        }
+    }
+    .main-intruction__subtitle{
+        background-color: $clr-millbrook;
+        padding-block: .5rem;
+        p{
+            text-align: center;
+            font-weight: $fw-semi-regular;
+            font-size: $fs-400;
+            color: $clr-neutral-100;
+        }
+    }
+    .main-intruction__img{
+        padding-block: 5rem;
+    }
+    .main-intruction__description{
+        padding-block: 1rem;
+    }
+    .main-intruction__caustion{
+        span{
+            font-weight: $fw-bold;
+            padding-bottom: 1rem;
+        }
+        p{
+            font-style: italic;
+        }
+    }
+    .main-intruction__hotline{
+        background-color: $clr-jambalaya;
+        padding: 1rem;
+        p{
+            font-weight: $fw-bold;
+            font-size: $fs-600;
+            text-align: center;
+            color: $clr-alto;
+        }
+    }
+}   

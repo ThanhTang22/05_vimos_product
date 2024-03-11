@@ -1,0 +1,26 @@
+
+.main-hero{
+    // position: relative;
+
+}
+
+.main-hero__text{
+    // position: relative;
+
+    padding-block: 2rem;
+    border: 1px solid blue;
+}
+.main-hero__text >h1{
+    margin-bottom: 1rem;
+}
+.main-hero__text >ul{
+    margin-left: 1rem;
+}
+.main-hero__text > h1,
+.main-hero__list > li{
+    word-spacing: .2rem;
+}   
+
+.main-hero__img-right{
+    width: 40%;
+}

@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.container {
+  width: 1200px;
+  max-width: 100%;
+  padding-inline: 2rem;
+  margin: 0 auto;
+  position: relative;
+  border: 1px solid red;
+}
+
+@media (min-with: 980px) {
+  .container {
+    padding-inline: 5rem;
+  }
+}
+.bg-banner__top {
+  background-image: linear-gradient(60deg, rgba(245, 236, 227, 0.7), rgba(245, 236, 227, 0.8)), url(../../asset/background/banner-top.jpg);
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.btn {
+  border: none;
+  border-radius: 8px;
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav {
+  position: relative;
+  cursor: pointer;
+  background-color: #C77803;
+  width: 3rem;
+  height: 3rem;
+}
+.header-nav .hamburger,
+.header-nav .hamburger::before,
+.header-nav .hamburger::after {
+  width: 50%;
+  height: 3px;
+  background-color: #DEDEDE;
+  display: block;
+  margin: 0 auto;
+}
+.header-nav .hamburger::before,
+.header-nav .hamburger::after {
+  content: "";
+  width: 100%;
+}
+.header-nav .hamburger::before {
+  transform: translateY(5px);
+}
+.header-nav .hamburger::after {
+  transform: translateY(-8px);
+}
+
+.main-hero__text {
+  padding-block: 2rem;
+  border: 1px solid blue;
+}
+
+.main-hero__text > h1 {
+  margin-bottom: 1rem;
+}
+
+.main-hero__text > ul {
+  margin-left: 1rem;
+}
+
+.main-hero__text > h1,
+.main-hero__list > li {
+  word-spacing: 0.2rem;
+}
+
+.main-hero__img-right {
+  width: 40%;
+}
+
+.main-solution {
+  background-color: #EAF5E4;
+  padding-block: 2rem;
+}
+
+.main-solution__text {
+  text-align: center;
+}
+
+.main-solution__card {
+  width: 100%;
+  min-width: 300px;
+  border: none;
+  border-radius: 10px;
+  margin-block: 2rem;
+  overflow: hidden;
+  border: 1px solid red;
+  position: relative;
+}
+
+.solution__card-img img {
+  display: inline-block;
+  object-fit: cover;
+  width: 100vw;
+  height: auto;
+}
+
+.solution__card-title {
+  background-color: #614539;
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+  padding-block: 0.5rem;
+}
+
+.solution__card-description {
+  background-color: #dedede;
+  color: #000;
+  padding: 1rem;
+}
+
+.main-product {
+  background-image: linear-gradient(60deg, rgba(245, 236, 227, 0.8), rgba(245, 236, 227, 0.9)), url(../asset/background/truc-moc-vi-an.jpg);
+  width: 100%;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-product__title {
+  text-align: center;
+  padding-block: 5rem;
+}
+
+.main-product__content {
+  color: 1rem;
+}
+.main-product__content .product__content-img {
+  text-align: center;
+}
+.main-product__content .product__content-img img {
+  width: 70%;
+}
+.main-product__content .product__content-title p {
+  font-weight: 700;
+  padding-block: 1rem;
+}
+.main-product__content .product__content-script > p {
+  padding-block: 1rem;
+}
+.main-product__content .product__content-btn {
+  text-align: center;
+  padding-block: 2rem;
+}
+.main-product__content .product__content-btn .btn-buy {
+  background-color: #FF0000;
+}
+
+.main-intruction {
+  background-color: #EAF5E4;
+}
+.main-intruction .main-intruction__title {
+  padding-block: 5rem;
+}
+.main-intruction .main-intruction__title h2 {
+  text-align: center;
+}
+.main-intruction .main-intruction__subtitle {
+  background-color: #614539;
+  padding-block: 0.5rem;
+}
+.main-intruction .main-intruction__subtitle p {
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.125rem;
+  color: #fff;
+}
+.main-intruction .main-intruction__img {
+  padding-block: 5rem;
+}
+.main-intruction .main-intruction__description {
+  padding-block: 1rem;
+}
+.main-intruction .main-intruction__caustion span {
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+.main-intruction .main-intruction__caustion p {
+  font-style: italic;
+}
+.main-intruction .main-intruction__hotline {
+  background-color: #5C3713;
+  padding: 1rem;
+}
+.main-intruction .main-intruction__hotline p {
+  font-weight: 700;
+  font-size: 1.75rem;
+  text-align: center;
+  color: #DEDEDE;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #5C3713;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 2.25rem;
+}
+
+/*# sourceMappingURL=style.css.map */

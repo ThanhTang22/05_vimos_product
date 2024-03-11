@@ -1,0 +1,42 @@
+//*  font family Roboto , dancing+script
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import './theme/variables';
+@import './theme/compoment';
+
+
+@import './header';
+@import './hero';
+@import './solution';
+@import './product.scss';
+@import './intructions';
+
+// ? set box-sizng
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+    color-scheme: dark;
+}
+
+// ? Base style
+body{
+    font-family: $ff-base;
+    font-size: $fs-300;
+    font-weight: $fw-regular;
+    line-height: 1.6;
+    color: $clr-jambalaya;
+}
+
+img{
+    max-width: 100%;
+}
+
+h1{
+    font-size: $fs-700;
+}
