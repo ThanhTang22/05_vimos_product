@@ -4,9 +4,17 @@ link reference: [link](https://mauweb.monamedia.net/vimos/)
 
 ## What I learn ?
 
+### HTML/CSS
+
 - Practing sass syntax code
 - Position: relative, absolution, fixed, ...
 - Begin make coding for mobile screen
+
+### JS
+
+- Learn DOM (Document Object Model)
+- Learn BOM (Browser Object Model)
+
 
 ## **Frontend style Guide**
 
