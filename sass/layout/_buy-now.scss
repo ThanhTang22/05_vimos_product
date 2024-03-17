@@ -1,0 +1,87 @@
+@import '../theme/compoment';
+
+.main-buy__now{
+    background-image: linear-gradient(
+        60deg,
+        rgba(245,236,227,0.8),
+        rgba(245,236,227,0.9)
+    ),
+    url(../asset/background/truc-moc-vi-an.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding-bottom: 5rem;
+}
+
+.main-buy__now-title{
+    padding-block: 2em;
+    h2{
+        text-align: center;
+    }
+}
+.main-buy__now-img{
+    text-align: center;
+    padding-bottom: 2em;
+    img{
+        width: 60%;
+    }
+}
+
+.main-buy__now-register{
+    background-color: $clr-indochine;
+    padding: 2em ;
+
+    h3{
+        color: $clr-neutral-100;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
+
+.buy__now-register_form{
+    margin-top: 2rem;
+}
+.buy_now-register__form-group{
+    
+    display: block;
+
+    border: 1px solid;
+    @media (min-width:450px) {
+        display: flex;
+        // gap: 1rem 1rem;
+        // row-gap: 1rem;
+        column-gap: 1em;
+    
+    }
+}
+.form-control__text{
+        display: block;
+        width: 100%;
+        background-color: $clr-neutral-100;
+        color: $clr-neutral-700;
+
+        border: none;
+        border-radius: 5px;
+
+        padding: 1em;
+        margin-bottom: 1em;
+}
+
+
+.buy_now-register__btn{
+    text-align: center;
+    padding-block: 2rem;
+}
+.btn-form__get{
+    max-width: 100%;
+    background-color: $clr-guardman-red;
+    text-transform: uppercase;
+    
+    padding: 1em 4em;
+    
+    @media (max-width: 450px) {
+        min-width: 100px;
+        padding: 1em 2rem;    
+    }
+}

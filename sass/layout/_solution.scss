@@ -1,0 +1,56 @@
+
+.main-solution{
+    background-color: $clr-peppermint;
+}
+
+.main-solution__text{
+    // border: 1px solid blue;
+    text-align: center;
+    padding-block: 5rem;
+}
+
+@media (min-width:700px) {
+    .main-solution__row{
+        display: flex;
+        column-gap: 1rem;
+    }
+}
+
+.main-solution__card{
+    width: 100%;
+
+    border: none;
+    border-radius: 10px;
+    border: 1px solid red;
+    
+    margin-block: 2rem;
+    overflow: hidden;
+
+    position: relative;
+}
+.solution__card-img img{
+    // display: inline-block;
+    object-fit: fill;
+    width: 100vw;
+    height: auto;
+}
+
+
+.solution__card-title{
+    background-color: $clr-millbrook;
+    color: $clr-neutral-100;
+
+
+    font-weight: $fw-semi-regular;
+    text-align: center;
+
+    padding-block: .5rem;
+    margin-top: -0.5rem;
+}
+.solution__card-description{
+    background-color: $clr-neutral-300;
+    color: $clr-neutral-700;
+    height: 100%;
+    
+    padding: 1rem;
+}

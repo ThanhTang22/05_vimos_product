@@ -1,0 +1,41 @@
+.container{
+    padding-bottom: 0 !important;
+
+}
+.main-hero{
+    position: relative;
+    // border: 1px solid red;
+    // overflow: hidden;
+    padding-bottom: 20rem;
+
+}
+
+.main-hero__img-left{
+    width: 80%;
+    position: absolute;
+    bottom: -0.5rem;
+    left: -2rem;
+}
+.main-hero__img-right{
+    width: 40%;
+    position: absolute;
+    bottom: -3rem;
+    right: 0;
+}
+
+.main-hero__text{
+    // border: 1px solid blue;
+    padding-block: 2rem;
+
+    h1{
+        margin-bottom: 1rem;
+    }
+    ul{
+        margin-left: 1rem;
+    }
+}
+.main-hero__text > h1,
+.main-hero__list > li{
+    word-spacing: .2rem;
+}   
+

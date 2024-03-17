@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vimos</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <main>
+        <div class="bg-banner__top" >
+
+            <!-- Navigation menu search of .header-nav -->
+            <div class="nav-search nav-hidden" id="nav-search__menu">
+                <div class="nav-search__menu">
+                    <form action="#server" method="get" class="nav-search__form">
+                        <input type="search" placeholder="Tìm kiếm ..." class="txt-search search-form__txt">
+                        <div class="search-form__icon-search">
+                            <a href="index.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;">
+                                    <path
+                                        d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                    </form>
+                    <div class="nav-menu__tag">
+                        <ul class="menu__tag-list">
+                            <li class="menu__tag-link">
+                                <a href="#main-hero" class="menu__tag-anchor" onunload="unload()">Giới thiệu</a>
+                            </li>
+                            <li class="menu__tag-link">
+                                <a href="#main-solution" class="menu__tag-anchor">Nguyên nhân</a>
+                            </li>
+                            <li class="menu__tag-link">
+                                <a href="#main-product" class="menu__tag-anchor">Thông tin sản phẩm</a>
+                            </li>
+                            <li class="menu__tag-link">
+                                <a href="#main-intruction" class="menu__tag-anchor">Hướng dẫn sử dụng</a>
+                            </li>
+                            <li class="menu__tag-link">
+                                <a href="#main-ingredient" class="menu__tag-anchor">Thành phần</a>
+                            </li>
+                            <li class="menu__tag-link">
+                                <a href="#main-about__us" class="menu__tag-anchor">Nguyên lý</a>
+                            </li>
+                            <li class="menu__tag-link">
+                                <a href="#main-feedback" class="menu__tag-anchor">Đánh giá</a>
+                            </li>
+                            <li class="menu__tag-link">
+                                <a href="#main-buy__now" class="menu__tag-anchor">Đăng ký sản phẩm</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="search-icon__quit">
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24"
+                            style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
+                            <path
+                                d="M21 5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5zm-4.793 9.793-1.414 1.414L12 13.414l-2.793 2.793-1.414-1.414L10.586 12 7.793 9.207l1.414-1.414L12 10.586l2.793-2.793 1.414 1.414L13.414 12l2.793 2.793z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Navigation cart total of header-cart -->
+            <div class="nav-cart nav-hidden">
+                <div class="nav-cart__total">
+                    <div class="cart__total-text">
+                        <h3 class="cart__total-title">Giỏ hàng</h3>
+                        <div class="cart_total-hrLine"></div>
+                        <p>Chưa có sản phẩm trong giỏ hàng.</p>
+                    </div>
+                </div>
+                <div class="cart-icon__quit">
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24"
+                            style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
+                            <path
+                                d="M21 5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5zm-4.793 9.793-1.414 1.414L12 13.414l-2.793 2.793-1.414-1.414L10.586 12 7.793 9.207l1.414-1.414L12 10.586l2.793-2.793 1.414 1.414L13.414 12l2.793 2.793z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- header -->
+            <!-- <div class="container-header__fixed"> -->
+            <div class="container-header__static">
+                <header class="header-nav">
+                    <div class="header-menu">
+                        <span class="hamburger"></span>
+                    </div>
+
+                    <div class="header-logo">
+                        <a href="index.html">
+                            <img src="./asset/logo/logo_vimos.png" alt="image logo home" width="150px" height="106px">
+                        </a>
+                    </div>
+
+                    <div class="header-cart">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="50px" height="50px"
+                            style="filter:invert(60%)"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                                d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64v48H160V112zm-48 48H48c-26.5 0-48 21.5-48 48V416c0 53 43 96 96 96H352c53 0 96-43 96-96V208c0-26.5-21.5-48-48-48H336V112C336 50.1 285.9 0 224 0S112 50.1 112 112v48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z" />
+                        </svg>
+                    </div>
+                </header>
+            </div>
+
+
+
+            <!-- hero -->
+            <div class="container" id="main-hero">
+                <section class="main-hero">
+                    <div class="main-hero__text">
+                        <h1>Hoạt huyết an thần Vimos</h1>
+                        <ul class="main-hero__list">
+                            <li>Giúp hoạt huyết</li>
+                            <li>Tăng cường lưu thông máu lên não</li>
+                            <li>Giảm các triệu chứng thiểu năng tuần hoàn não</li>
+                        </ul>
+                    </div>
+                    <div class="main-hero__img-left">
+                        <img src="./asset/hoa-da.png" alt="image hoa da">
+                    </div>
+                    <div class="main-hero__img-right">
+                        <img src="./asset/san-pham-ha-huyet.png" alt="image hoa da">
+                    </div>
+                </section>
+            </div>
+
+        </div>
+
+        <section class="main-solution" id="main-solution">
+            <div class="container">
+                <div class="main-solution__text">
+                    <h1>Hậu quả của thiếu máu não</h1>
+                </div>
+                <div class="main-solution__row">
+                    <figure class="main-solution__card">
+                        <div class="solution__card-img">
+                            <img src="./asset/tai-bien.jpg" alt="ảnh tai biến">
+                        </div>
+                        <figcaption class="solution__card-title">
+                            Tai biến mạch máu não
+                        </figcaption>
+                        <div class="solution__card-description">
+                            Mỗi năm Việt Nam có khoảng 200.000 người mắc bệnh lý tai biến mạch máu não, gần một nửa
+                            trong số đó tử vong. Nguyên nhân chính của tai biến mạch máu não là do thiếu máu não.
+                        </div>
+                    </figure>
+                    <figure class="main-solution__card">
+                        <div class="solution__card-img">
+                            <img src="./asset/thieu-nang-tuan-hoan-mau.jpg" alt="ảnh thiểu năng tuần hoàn não">
+                        </div>
+                        <figcaption class="solution__card-title">
+                            Thiểu năng tuần hoàn não
+                        </figcaption>
+                        <div class="solution__card-description">
+                            Thiểu năng tuần hoàn não hay còn gọi là thiếu máu não thường gặp ở người cao tuổi và người
+                            lao động trí óc nhiều. khi não không được cung cấp đầy đủ lượng máu cần thiết sẽ ảnh hưởng
+                            tới chức năng của các cơ quan trong cơ thể.
+                        </div>
+                    </figure>
+                    <figure class="main-solution__card">
+                        <div class="solution__card-img">
+                            <img src="./asset/mat-ngu-kinh-nien.jpg" alt="ảnh Mất ngủ kinh niên">
+                        </div>
+                        <figcaption class="solution__card-title">
+                            Mất ngủ kinh niên
+                        </figcaption>
+                        <div class="solution__card-description">
+                            Thiếu máu não còn gây ra hiện tượng mất ngủ kinh niên, nếu không chú ý điều trị kịp thời,
+                            bệnh nhân có thể bị nhũn não, xuất huyết não gây liệt nửa người hoặc chết đột ngột. Điều cần
+                            chú ý ở đây là bệnh nhân rất dễ bị tái phát và dẫn tới bị tai biến mạch máu não thật sự.
+                        </div>
+                    </figure>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="main-product" id="main-product">
+            <div class="container">
+                <div class="main-product__title">
+                    <h2>Hoạt huyết an thần Vimos - giải pháp dành cho người thiếu máu não</h2>
+                </div>
+                <div class="main-product__content">
+                    <div class="product__content-img">
+                        <img src="./asset/san-pham-ha-huyet.png" alt="img product">
+                    </div>
+                    <div class="product__content-content">
+                        <div class="product__content-title">
+                            <p>Vì sao Hoạt huyết an thần Vimos lại là sản phẩm khuyên dùng cho người thiếu máu não :</p>
+                        </div>
+                        <div class="product__content-script">
+                            <p>Hoạt huyết an thần Vimos giúp hoạt huyết, tăng cường lưu thông máu lên não, giúp làm giảm
+                                các triệu chứng thiểu năng tuần hoàn não: hoa mắt, chóng mặt, mất ngủ, căng thẳng thần
+                                kinh, tê bì chân tay.</p>
+                        </div>
+                        <div class="product__content-script">
+                            <p>Hoạt huyết an thần Vimos là sản phẩm chất lượng cao, do nhà máy dược phẩm Hải Dương sản
+                                xuất. Điểm nổi bật dễ nhận thấy trong thành phần của sản phẩm đều là Cao, đã được chiết
+                                xuất và phun sấy khô, hàm lượng hoạt chất cao hơn rất nhiều lần so với cùng trọng lượng
+                                dược liệu thô hay dạng cao đặc, nâng cao chất lượng sản phẩm lên rất nhiều. Sản phẩm
+                                chứa hàm lượng Cao khô bạch quả là thành phần nguyên liệu chủ yếu nên cho công dụng hoạt
+                                huyết tốt, người bệnh có thể thấy tác dụng ngay trong khoảng 2 đến 5 ngày sử dụng.</p>
+                        </div>
+                        <div class="product__content-btn">
+                            <button class="btn btn-buy">Đặt mua ngay</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-intruction" id="main-intruction">>
+            <div class="container">
+                <div class="main-intruction__title">
+                    <h2>Hướng dẫn sử dụng</h2>
+                </div>
+                <div class="main-intruction__subtitle">
+                    <p>ĐỐI TƯỢNG SỬ DỤNG</p>
+                </div>
+                <div class="main-intruction__description">
+                    <p>Người trưởng thành bị thiểu năng tuần hoàn não gây đau đầu, chóng mặt, mất ngủ, căng thẳng, tê bì
+                        chân tay.</p>
+                </div>
+                <div class="main-intruction__img">
+                    <img src="./asset/san-pham-ha-huyet.png" alt="image product">
+                </div>
+                <div class="main-intruction__subtitle">
+                    <p>HƯỚNG DẪN SỬ DỤNG</p>
+                </div>
+                <div class="main-intruction__description">
+                    <p>Uống 2-3v/l, ngày 2-3 lần, uống sau ăn. Đợt dùng: Nên dùng 6-8 tuần liên tục.</p>
+                </div>
+                <div class="main-intruction__caustion">
+                    <span>Lưu lý:</span>
+                    <p>Không dùng cho phụ nữ có thai, phụ nữ đang thời kỳ hành kinh, người đang chảy máu, người chuẩn bị
+                        phẫu thuật. Sản phẩm này không phải là thuốc, không có tác dụng thay thế thuốc chữa bệnh.</p>
+                </div>
+            </div>
+            <div class="main-intruction__hotline">
+                <p>Nhanh tay nhấc máy gọi đến Hotline: 0126 922 0162</p>
+            </div>
+        </section>
+
+        <section class="main-ingredient" id="main-ingredient">
+            <div class="container">
+                <div class="main-ingredient__tittle">
+                    <h2>Thành phần của Hoạt huyết an thần Vimos</h2>
+                </div>
+                <div class="main-ingredient__img">
+                    <img src="./asset/san-pham-ha-huyet.png" alt="image product">
+                </div>
+                <div class="main-ingredient__description">
+                    <ul class="ingredient__description-list">
+                        <li class="ingredient__description-text">
+                            <p>
+                                <span class="ingredient__description-subtitle">Cao Bạch quả:</span>
+                                <span>..........100mg</span>
+                            </p>
+                        </li>
+                        <li class="ingredient__description-text">
+                            <p>
+                                <span class="ingredient__description-subtitle">Cao Đinh lăng:</span>
+                                <span>..........40mg</span>
+                            </p>
+                        </li>
+                        <li class="ingredient__description-text">
+                            <p>
+                                <span class="ingredient__description-subtitle">Cao Thục địa:</span>
+                                <span>..........40mg</span>
+                            </p>
+                        </li>
+                        <li class="ingredient__description-text">
+                            <p>
+                                <span class="ingredient__description-subtitle">Cao Đỏ ngọn:</span>
+                                <span>..........50mg</span>
+                            </p>
+                        </li>
+                        <li class="ingredient__description-text">
+                            <p>
+                                <span class="ingredient__description-subtitle">Cao Giảo cổ lam:</span>
+                                <span>..........50mg</span>
+                            </p>
+                        </li>
+                        <li class="ingredient__description-text">
+                            <p>
+                                <span class="ingredient__description-subtitle">Cao Bình vôi:</span>
+                                <span>..........40mg</span>
+                            </p>
+                        </li>
+                        <li class="ingredient__description-text">
+                            <p>
+                                <span class="ingredient__description-subtitle">Cao Hoàng tinh hoa đỏ: </span>
+                                <span>..........40mg</span>
+                            </p>
+                        </li>
+                        <li class="ingredient__description-text">
+                            <p>
+                                <span class="ingredient__description-subtitle">Cao Hòe hoa: </span>
+                                <span>..........40mg</span>
+                            </p>
+                        </li>
+                        <li class="ingredient__description-text">
+                            <p>
+                                <span class="ingredient__description-subtitle">Thành phần khác: </span>
+                                <span>talc, avicell, magnesi stearate…</span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-about__us" id="main-about__us">
+            <div class="container">
+                <div class="main-about__us-titile">
+                    <h2>Nguyên lý hoạt động của Hoạt huyết an thần Vimos</h2>
+                </div>
+                <div class="main-about__us-descript">
+                    <p>
+                        <span class="about__us--descript-bold">Cao bạch quả:</span>
+                        <span>Chống lão suy và bệnh Alzheimer, trí óc minh mẫn và phản ứng nhanh nhạy hơn. Hỗ trợ tăng
+                            cường trí nhớ và tập trung tinh thần. Giúp cơ thể chống lại tình trạng suy thoái do lão hóa,
+                            giúp tăng cường thính giác…</span>
+                    </p>
+                </div>
+                <div class="main-about__us-descript">
+                    <p>
+                        <span class="about__us--descript-bold">Lá Cây đỏ ngọn:</span>
+                        <span>chứa Flavonoid, có hoạt tính chống oxy hóa cao, có tác dụng triệt tiêu các gốc tự do trong
+                            cơ thể, có tác dụng hoạt huyết, lưu thông mạch máu, ngăn ngừa nguy cơ mắc bệnh mạch vành,
+                            giảm đông máu trong những trường hợp tăng động, có tác dụng hoạt hóa hệ thần kinh trung ương
+                            và tăng cường trí nhớ.</span>
+                    </p>
+                </div>
+                <div class="main-about__us-descript">
+                    <p>
+                        <span class="about__us--descript-bold">Cao bạch quả</span>
+                        <span>chứa Flavonoid, có hoạt tính chống oxy hóa cao, có tác dụng triệt tiêu các gốc tự do trong
+                            cơ thể, có tác dụng hoạt huyết, lưu thông mạch máu, ngăn ngừa nguy cơ mắc bệnh mạch vành,
+                            giảm đông máu trong những trường hợp tăng động, có tác dụng hoạt hóa hệ thần kinh trung ương
+                            và tăng cường trí nhớ.</span>
+                    </p>
+                </div>
+                <div class="main-about__us-descript">
+                    <p>
+                        <span class="about__us--descript-bold">
+                            Cao Đinh lăng và cao Thục địa:
+                        </span>
+                        <span>
+                            có tác dụng bổ huyết, bổ khí, giúp cơ thể hồi phục nhanh.
+                        </span>
+                    </p>
+                </div>
+                <div class="main-about__us-descript">
+                    <p>
+                        <span class="about__us--descript-bold">
+                            Cao Bình vôi:
+                        </span>
+                        <span>
+                            có tác dụng an thần, gây ngủ, chữa nhức đầu, ngủ ngon giấc, sâu giấc.
+                        </span>
+                    </p>
+                </div>
+                <div class="main-about__us-descript">
+                    <p>
+                        <span class="about__us--descript-bold">
+                            Cao Giảo cổ lam:
+                        </span>
+                        <span>
+                            có chứa hơn 100 loại saponin có tác dụng đặc biệt tốt trong việc hạ mỡ máu, ngăn ngừa xơ vũa
+                            động mạch. Chất adenosine trong giảo cổ lam cũng có tác dụng rất tốt cho tim mạch, ổn định
+                            huyết áp, tăng cường máu lên não, giúp dễ ngủ và ngủ sâu giấc.
+                        </span>
+                    </p>
+                </div>
+                <div class="main-about__us-descript">
+                    <p>
+                        <span class="about__us--descript-bold">
+                            Cao Hòe hoa:
+                        </span>
+                        <span>
+                            có tác dụng giảm Cholesterol trong máu, có tác dụng cầm máu tốt, hạ mỡ trong máu. Khi kết
+                            hợp các loại cao đặc của các thảo dược trên sẽ giúp tăng cường công dụng đưa máu lên não,
+                            làm sạch mạch máu,chống xơ vữa động mạch, ổn định huyết áp, giảm nguy cơ tai biến rất hiệu
+                            quả.
+                        </span>
+                    </p>
+                </div>
+                <div class="main-about__us-img">
+                    <img src="./asset/san-pham-ha-huyet.png" alt="image product">
+                </div>
+            </div>
+        </section>
+
+        <section class="main-feedback" id="main-feedback">
+            <div class="container">
+                <div class="main-feedback__title">
+                    <h2>Cảm nhận khách hàng về Hoạt huyết an thần Vimos</h2>
+                </div>
+                <div class="main-feedback__users">
+                    <div class="feedback__user-img">
+                        <img src="./asset/woman-150x150.png" alt="image woman">
+                    </div>
+                    <div class="feedback__user-card">
+                        <div class="feedback__users-vote">
+                            <!-- icon awesome star -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
+                                <path
+                                    d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                                </path>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
+                                <path
+                                    d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                                </path>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
+                                <path
+                                    d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                                </path>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
+                                <path
+                                    d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                                </path>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
+                                <path
+                                    d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="feedback__users-comment">
+                            <p>
+                                TTôi bị đau dạ dày từ lâu,đã từng sử dụng qua rất nhiều sản phẩm chữa đau dạ dày mà
+                                không thuyên giảm được bạn giới thiệu sử dụng thuốc Mộc Vị An của dân tộc Dao này tôi
+                                cảm thấy rất tốt. Tôi ăn ngon, ngủ ngon hơn. Giá như tôi biết sản phẩm này từ sớm thì
+                                tôi đã không phải chịu cảnh khổ sở như này lâu như vậy.
+                            </p>
+                        </div>
+                        <div class="feedback__users-information">
+                            <p>
+                                <span>Chị Mai, 35 tuổi </span>
+                                / Tp Hồ Chí Minh
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-feedback__users">
+                    <div class="feedback__user-img">
+                        <img src="./asset/man-150x150.png" alt="image man">
+                    </div>
+                    <div class="feedback__user-card">
+                        <div class="feedback__users-vote">
+                            <!-- icon awesome star -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
+                                <path
+                                    d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                                </path>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
+                                <path
+                                    d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                                </path>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
+                                <path
+                                    d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                                </path>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
+                                <path
+                                    d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                                </path>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
+                                <path
+                                    d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="feedback__users-comment">
+                            <p>
+                                TTôi bị đau dạ dày từ lâu,đã từng sử dụng qua rất nhiều sản phẩm chữa đau dạ dày mà
+                                không thuyên giảm được bạn giới thiệu sử dụng thuốc Mộc Vị An của dân tộc Dao này tôi
+                                cảm thấy rất tốt. Tôi ăn ngon, ngủ ngon hơn. Giá như tôi biết sản phẩm này từ sớm thì
+                                tôi đã không phải chịu cảnh khổ sở như này lâu như vậy.
+                            </p>
+                        </div>
+                        <div class="feedback__users-information">
+                            <p>
+                                <span>Chị Mai, 35 tuổi </span>
+                                / Tp Hồ Chí Minh
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-buy__now" id="main-buy__now">
+            <div class="container">
+                <div class="main-buy__now-title">
+                    <h2>Đặt mua ngay</h2>
+                </div>
+                <div class="main-buy__now-img">
+                    <img src="./asset/san-pham-ha-huyet.png" alt="image product">
+                </div>
+                <div class="main-buy__now-register">
+                    <h3>Form đăng ký thông tin</h3>
+                    <form action="#server-sql" method="get" class="buy__now-register_form">
+                        <div class="buy_now-register__form-group">
+                            <input type="text" name="textboxName" id="txtName" placeholder="Họ và tên"
+                                class="form-control__text">
+                            <input type="text" name="textboxEmail" id="txtEmail" placeholder="Email"
+                                class="form-control__text">
+                        </div>
+
+                        <div class="buy_now-register__form-group">
+                            <input type="text" name="textboxPhone" id="txtPhone" placeholder="Số điện thoại"
+                                class="form-control__text">
+                            <input type="text" name="textboxMany" id="txtMany" placeholder="Số lượng"
+                                class="form-control__text">
+                        </div>
+
+                        <input type="text" name="textboxComment" id="txtComment" placeholder="Lời nhắn"
+                            class="form-control__text">
+
+                        <div class="buy_now-register__btn">
+                            <button type="submit" class="btn btn-form__get">Gửi</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer-author">
+            <div class="container">
+                <p>
+                    &copy; Bản quyền thuộc về . Thiết kế website
+                    <img src="./asset/logo/logo.png" alt="image logo Mona Media">
+                    <span> MonaMedia Mona Media </span>
+                </p>
+            </div>
+        </footer>
+
+
+    </main>
+
+
+    <!-- header even toggle -->
+    <!-- addtion even scroll of container-header__fixed -->
+    <script src="./JS/scrollDown.js"></script>
+    <!-- add even toggle from .header-menu to .nav-search -->
+    <script src="./JS/navToggle.js"></script>
+</body>
+
+</html>

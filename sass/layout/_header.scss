@@ -1,0 +1,127 @@
+.container-header__static{
+
+    
+    position: relative;
+    // position: fixed;
+    width: 100%;
+    // max-width: 100%;
+
+    // border: 1px solid blue;
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+    z-index: 1;
+    // transition: background-color .3s, opacity .3s;
+    // background-color: rgba(255,255,255, 0.8);
+}
+.container-header__fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 2;
+    transition: background-color 1s ease-in;
+    background-color: rgba(255,255,255, 0.8);
+
+    // animation-name: stuckMoveDown;
+    // animation-duration: 1s;
+    // animation-timing-function: ease-in;
+    // animation-iteration-count: infinite;
+
+}
+// @keyframes stuckMoveDown {
+//     0%{
+//         transform: translateY(-100%);
+//     }
+//     100%{
+//         transform: translateY(0);
+//     }
+// }
+
+
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    
+    // position: fixed;
+    width: 1200px;
+    max-width: 100%;
+
+    padding-inline: 2rem;
+    margin: 0 auto;
+
+
+
+    @media (max-width:450px){
+        padding-inline: 0;
+    }
+}
+
+.header-menu{
+    cursor: pointer;
+    // position: relative;
+    // left: 0;
+    // top: 0;
+
+    width: 3rem;
+    min-width: 3rem;
+    height: 3rem;
+    // border: 1px solid red; 
+    &:hover,
+    &:focus{
+        background-color: $clr-indochine;
+    }
+}
+.hamburger,
+.hamburger::before,
+.hamburger::after{
+    width: 70%;
+    height: 3px;
+    border-radius: 100px;
+    background-color: $clr-millbrook;
+    
+    display: block;
+    margin: 1rem auto;
+
+
+}
+.hamburger::before,
+.hamburger::after{
+    content: "";
+    width: 100%;
+}
+
+.hamburger::before{
+    transform: translateY(7px);
+}
+.hamburger::after{
+    transform: translateY(-5px);
+}
+
+.header-logo{
+    max-width: 150px;
+    text-align: center;
+    padding-inline: 1rem;
+    // border: 1px solid red;
+}
+
+.header-cart{
+    // border: 1px solid red;
+    // position: relative;
+    // right: 0;
+    // top: 0;
+}
+
+.nav-toggle{
+    position: absolute;
+    top: 0;
+    right: 50px;
+    left: 0;
+    bottom: 0;
+
+    width: 50px;
+    background-color: $clr-neutral-100;
+    // border: 1px solid red;
+    
+}

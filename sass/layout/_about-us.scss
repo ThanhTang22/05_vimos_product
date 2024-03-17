@@ -1,0 +1,27 @@
+
+.main-about__us{
+    background-color: $clr-alto;
+
+    .main-about__us-titile{
+        padding-block: 2rem;
+        h2{
+            font-size: $fs-600;
+            text-align: center;
+        }
+    }
+    .main-about__us-descript{
+        padding-bottom: 2rem;
+        line-height: 2;
+        .about__us--descript-bold{
+            color: $clr-red;
+            font-weight: $fw-bold;
+        }
+    }
+    .main-about__us-img{
+        text-align: center;
+        padding-block: 2rem;
+        img{
+            width: 60%;
+        }
+    }
+}
