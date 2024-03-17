@@ -1,0 +1,46 @@
+
+.main-feedback{
+    background-color: $clr-peppermint;
+}
+
+.main-feedback__title{
+    padding-block: 2rem;
+    h2{
+        font-size: $fs-600;
+        text-align: center;
+    }
+}
+
+.main-feedback__users{
+
+    padding-bottom: 5rem;
+    // border: 1px solid red;
+    @media (min-width:700px) {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        column-gap: 1rem;
+    }
+}
+
+.feedback__user-img{
+    margin-bottom: 1rem;
+    // border: 1px solid blue;
+    img{
+        // width: 50%;
+        border-radius: 50%;
+    }
+}
+
+.feedback__user-card{
+    // border: 1px solid blue;
+}
+.feedback__users-comment p{
+    font-style: italic;
+}
+.feedback__users-information{
+    padding-top: 2rem;
+}
+.feedback__users-information span{
+    font-weight: $fw-black;
+}
+

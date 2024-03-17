@@ -53,4 +53,25 @@ The design were created to the following width:
 
 ### Images
 
+<!-- Background image -->
+[image Banner-top](https://mauweb.monamedia.net/vimos/wp-content/uploads/2018/05/banner-top.jpg)
+[image Truc](https://mauweb.monamedia.net/vimos/wp-content/uploads/2018/05/truc-moc-vi-an.jpg)
+
+<!-- Logo -->
+[icon Logo website](https://mauweb.monamedia.net/vimos/wp-content/uploads/2018/05/logo.png)
+[Icon logo author](https://mona.solutions/logo.png)
+
+<!-- Hero -->
+[image Hoa Da](https://mauweb.monamedia.net/vimos/wp-content/uploads/2018/05/hoa-da.png)
+[image San pham](https://mauweb.monamedia.net/vimos/wp-content/uploads/2018/05/san-pham-ha-huyet.png)
+
+<!-- solution -->
+[image Tai bien](https://mauweb.monamedia.net/vimos/wp-content/uploads/2018/05/tai-bien.jpg)
+[image Thieu mau](https://mauweb.monamedia.net/vimos/wp-content/uploads/2018/05/thieu-nang-tuan-hoan-mau.jpg)
+[image Mat ngu](https://mauweb.monamedia.net/vimos/wp-content/uploads/2018/05/mat-ngu-kinh-nien.jpg)
+
+<!-- Feedback -->
+[image Woman](https://mauweb.monamedia.net/vimos/wp-content/uploads/2018/05/woman-150x150.png)
+[image Man](https://mauweb.monamedia.net/vimos/wp-content/uploads/2018/05/man-150x150.png)
+
 ### Videos source

@@ -1,35 +1,40 @@
 
 .main-solution{
     background-color: $clr-peppermint;
-    padding-block: 2rem;
 }
 
 .main-solution__text{
     // border: 1px solid blue;
     text-align: center;
+    padding-block: 5rem;
 }
+
+@media (min-width:700px) {
+    .main-solution__row{
+        display: flex;
+        column-gap: 1rem;
+    }
+}
+
 .main-solution__card{
     width: 100%;
-    min-width: 300px;
 
     border: none;
     border-radius: 10px;
-
+    border: 1px solid red;
+    
     margin-block: 2rem;
     overflow: hidden;
-    border: 1px solid red;
 
     position: relative;
 }
-.solution__card-img{
-
-    img{
-    display: inline-block;
-    object-fit: cover;
+.solution__card-img img{
+    // display: inline-block;
+    object-fit: fill;
     width: 100vw;
     height: auto;
-    }
 }
+
 
 .solution__card-title{
     background-color: $clr-millbrook;
@@ -40,10 +45,12 @@
     text-align: center;
 
     padding-block: .5rem;
+    margin-top: -0.5rem;
 }
 .solution__card-description{
     background-color: $clr-neutral-300;
     color: $clr-neutral-700;
-
+    height: 100%;
+    
     padding: 1rem;
 }

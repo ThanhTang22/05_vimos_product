@@ -1,0 +1,46 @@
+
+.main-ingredient{
+    background-image: linear-gradient(
+        60deg,
+        rgba(245,236,227,0.8),
+        rgba(245,236,227,0.9)
+    ),url(../asset/background/truc-moc-vi-an.jpg);
+    
+    width: 100%;
+    position: relative;
+    
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .main-ingredient__tittle{
+        padding-block: 2rem;
+        h2{
+            font-size: $fs-600;
+            text-align: center;
+        }
+    }
+
+
+    .main-ingredient__description{
+        padding-block: 2rem;
+        
+        ul.ingredient__description-list{
+            list-style-type: none;
+            li.ingredient__description-text{
+                padding-block: .5rem;
+
+                p >.ingredient__description-subtitle{
+                    font-size: $fs-400;
+                    font-weight: $fw-bold;
+                    font-style: italic;
+                    color: $clr-indochine;
+                }
+                p > span{
+                    font-style: italic;
+                    font-size: $fs-400;
+                }
+            }
+        }
+    }
+}

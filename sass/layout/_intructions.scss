@@ -3,7 +3,7 @@
     background-color: $clr-peppermint;
 
     .main-intruction__title{
-        padding-block: 5rem;
+        padding-block: 2rem 3rem;
         h2{
             text-align: center;
         }
@@ -19,12 +19,13 @@
         }
     }
     .main-intruction__img{
-        padding-block: 5rem;
+        padding-block: 2rem;
     }
     .main-intruction__description{
         padding-block: 1rem;
     }
     .main-intruction__caustion{
+        padding-bottom: 2rem;
         span{
             font-weight: $fw-bold;
             padding-bottom: 1rem;

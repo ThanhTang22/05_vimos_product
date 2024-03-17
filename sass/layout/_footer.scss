@@ -1,0 +1,20 @@
+
+.footer-author{
+    background-color: $clr-jambalaya;
+    color: rgba(232, 232, 232, 0.6);
+
+    .container{
+        padding: 0;
+    }
+    p{
+        padding: 1rem;
+        text-align: center;
+        font-size: $fs-200;
+        img{
+            width: 25px;
+            height: 25px;
+            vertical-align:sub;
+        }
+    }
+}
+

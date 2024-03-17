@@ -1,0 +1,150 @@
+@import '../theme/compoment';
+
+
+// body{
+//     height: 100%;
+//     overflow-y: hidden;
+// }
+.nav-hidden{
+    visibility: hidden;
+    height: 0;
+
+}
+.nav-visible{
+    visibility: visible;
+    height: 100%;
+}
+.body-lock__screen{
+    overflow: hidden;
+    height: 100%;
+}
+.search-icon__quit,
+.cart-icon__quit{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 99;
+
+    // border: 1px solid red;
+    button{
+        background-color: inherit;
+        border: none;
+        &:hover,
+        &:focus{
+            filter: invert(80%);
+        }
+    
+    }
+}
+
+
+//* navigation search
+.nav-search{
+    background-color: rgba(0,0,0,0.5);
+    width: 100vw;
+    height: 100vh;
+
+    position: fixed;
+    z-index: 98;
+
+}
+.nav-search__menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+
+    height: 100vh;
+    width: 250px;
+    background-color: $clr-neutral-100;
+    overflow: scroll;
+
+}
+
+.nav-search__form{
+    display: flex;
+    align-items: stretch;
+
+    width: 200px;
+    border: 1px solid $clr-neutral-300;
+
+    margin: 2rem auto 0;
+}
+
+.txt-search{
+    background-color: $clr-neutral-100;
+    padding: .5rem;
+    width: 80%;
+    border: 1px solid $clr-alto;
+}
+
+.search-form__icon-search{
+    outline: $clr-indochine solid 1px;
+    // border: 1px solid blue;
+    background-color: $clr-indochine;
+    width: 20%;
+    padding-top: .5rem;
+    text-align: center;
+}
+
+
+
+// * nav-menu__tag
+.nav-menu__tag{
+    margin-top: 5rem;
+
+}
+.menu__tag-link > a{
+    display: block;
+    // text-align: center;
+    font-size: $fs-400;
+
+    border: 1px solid $clr-alto;
+    background-color: $clr-neutral-100;
+    padding: 1rem 2rem;
+
+    &:hover,
+    &:focus{
+        background-color: $clr-indochine;
+    }
+}
+
+
+//* navigation cart total
+.nav-cart{
+    background-color: rgba(0,0,0,0.5);
+    width: 100vw;
+    height: 100vh;
+
+    position: fixed;
+    z-index: 98;
+
+}
+
+.nav-cart__total{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 99;
+
+    height: 100vh;
+    width: 250px;
+    background-color: $clr-neutral-100;
+}
+
+.cart__total-text{
+    padding: 5rem 2rem 0;
+}
+.cart__total-title{
+    text-align: center;
+    text-transform: uppercase;
+    word-spacing: 0.2em;
+}
+.cart_total-hrLine{
+    background-color: $clr-alto;
+    width: 2rem;
+    height: 3px;
+    
+    border-radius: 100px;
+    margin: 1rem auto;
+}

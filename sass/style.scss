@@ -5,38 +5,17 @@
 @import './theme/compoment';
 
 
-@import './header';
-@import './hero';
-@import './solution';
-@import './product.scss';
-@import './intructions';
+@import './layout/header';
+@import './layout/navigation';
+@import './layout/hero';
 
-// ? set box-sizng
-*,
-*::before,
-*::after{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-html{
-    scroll-behavior: smooth;
-    color-scheme: dark;
-}
+@import './layout/solution';
+@import './layout/product.scss';
+@import './layout/intructions';
+@import './layout/ingredient';
+@import './layout/about-us';
+@import './layout/feedback';
+@import './layout/buy-now';
 
-// ? Base style
-body{
-    font-family: $ff-base;
-    font-size: $fs-300;
-    font-weight: $fw-regular;
-    line-height: 1.6;
-    color: $clr-jambalaya;
-}
+@import './layout/footer';
 
-img{
-    max-width: 100%;
-}
-
-h1{
-    font-size: $fs-700;
-}
