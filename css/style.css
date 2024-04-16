@@ -57,7 +57,11 @@ a {
   }
 }
 .bg-banner__top {
-  background-image: linear-gradient(60deg, rgba(245, 236, 227, 0.7), rgba(245, 236, 227, 0.8)), url(../asset/background/banner-top.jpg);
+  background-image: linear-gradient(
+    60deg, 
+    rgba(245, 236, 227, 0.7),
+    rgba(245, 236, 227, 0.8)
+  ), url(../asset/background/banner-top.jpg);
   width: 100%;
   height: 100%;
   background-position: center;
